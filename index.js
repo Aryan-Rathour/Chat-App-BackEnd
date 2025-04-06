@@ -20,6 +20,10 @@ const io = new Server( server,{
 app.use(cors());
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+    res.send("Chat App Backend.")
+})
+
 const chatRoutes = require('./routes/chat');
 app.use('/api/chat', chatRoutes);
 
