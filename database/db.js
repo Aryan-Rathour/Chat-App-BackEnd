@@ -6,4 +6,4 @@ const mongoDbConnection = ()=>{
   .catch((err) => console.log(err)); 
 }
 
-module.exports = mongoDbConnection;
+module.exports = mongoDbConnection; 
